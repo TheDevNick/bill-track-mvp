@@ -58,7 +58,7 @@ MongoClient.connect(`mongodb+srv://${username}:${password}@cluster0.7lkx5.mongod
 
 
 
-const PORT = 3001
-app.listen(process.env.PORT || PORT, () => {
+const PORT = process.env.PORT || 3001
+app.listen(PORT, () => {
     console.log(`The server is running on port: ${PORT}. You better go catch it.`)
 })
